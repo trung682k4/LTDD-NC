@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_12"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <include
+        android:id="@+id/room_thumb"
+        layout="@layout/view_thumb"
+        android:layout_width="84dp"
+        android:layout_height="84dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/room_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:textColor="@color/black" android:textSize="15sp" android:textStyle="bold" />
+        <TextView android:id="@+id/room_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+        <TextView android:id="@+id/room_price" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/primary" android:textSize="15sp" android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

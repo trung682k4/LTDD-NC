@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_0" android:icon="@drawable/ic_check" android:title="@string/s_kiem_duyet" />
+    <item android:id="@+id/nav_1" android:icon="@drawable/ic_email" android:title="@string/s_ho_tro" />
+    <item android:id="@+id/nav_2" android:icon="@drawable/ic_menu" android:title="@string/add" />
+</menu>

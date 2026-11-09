@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_6" android:showDividers="middle">
+            <include android:id="@+id/step1" layout="@layout/item_step" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            <include android:id="@+id/step2" layout="@layout/item_step" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            <include android:id="@+id/step3" layout="@layout/item_step" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+        </LinearLayout>
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_cat" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_phan_loai_muc_do" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_room" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_phong" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_reporter" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_nguoi_bao" />
+        <TextView android:id="@+id/tv_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+            <include android:id="@+id/thumb1" layout="@layout/view_thumb" android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1" />
+            <include android:id="@+id/thumb2" layout="@layout/view_thumb" android:layout_width="0dp" android:layout_height="110dp" android:layout_weight="1" android:visibility="gone" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_accept" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_tiep_nhan_amp_chuyen_dang_xu_ly" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_close_landlord" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_dong_phieu_da_giai_quyet" android:textColor="@color/green" app:strokeColor="@color/green" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_close_tenant" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_dong_phieu_da_giai_quyet" app:backgroundTint="@color/green" android:visibility="gone" />
+        <TextView style="@style/Rent.Section" android:text="@string/s_lich_su_xu_ly" />
+        <LinearLayout android:id="@+id/history" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

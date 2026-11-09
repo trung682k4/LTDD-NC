@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+            <include android:id="@+id/thumb1" layout="@layout/view_thumb" android:layout_width="0dp" android:layout_height="180dp" android:layout_weight="1" />
+            <include android:id="@+id/thumb2" layout="@layout/view_thumb" android:layout_width="0dp" android:layout_height="180dp" android:layout_weight="1" android:visibility="gone" />
+        </LinearLayout>
+        <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="20sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tag_status" style="@style/Rent.Tag" android:visibility="gone" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_price" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_gia_thue_tien_coc" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_area" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_dien_tich_suc_chua" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_address" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_dia_chi" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_utilities" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_dien_nuoc" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_fees" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_phi_dich_vu_khac" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_amen" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_tien_ich" />
+        <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_owner" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_lien_he_chu_tro" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_book" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_dat_lich_xem_phong" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_chat" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_nhan_tin_cho_chu_tro" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_moderate" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_mo_man_hinh_kiem_duyet" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_contract" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_lap_hop_dong_cho_phong_nay" android:visibility="gone" />
+        <TextView android:id="@+id/tv_admin_note" style="@style/Widget.Rent.Info.Amber" android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

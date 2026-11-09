@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_6"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/s_mo_phong_che_do_ngoai_tuyen"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/offline_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_bat_de_thu_ghi_chi_so_khi_mat_mang_tat"
+        android:textColor="@color/muted"
+        android:textSize="14sp" />
+</LinearLayout>

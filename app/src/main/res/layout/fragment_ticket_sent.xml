@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <TextView android:id="@+id/tv_head" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/s_phieu_su_co_da_duoc_ghi_nhan" android:textColor="@color/black" android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:paddingTop="40dp" />
+        <TextView android:id="@+id/tag_status" style="@style/Rent.Tag" />
+        <TextView style="@style/Widget.Rent.Info" android:text="@string/s_he_thong_ghi_nhan_phieu_o_trang_thai_c" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_follow" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_theo_doi_phieu" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

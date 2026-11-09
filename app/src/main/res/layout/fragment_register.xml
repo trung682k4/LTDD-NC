@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_thong_tin_ca_nhan_ho_va_ten"
+            app:placeholderText="@string/s_nhap_thong_tin_ca_nhan"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:inputType="textCapSentences"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_thong_tin_dinh_danh_cccd_cmnd"
+            app:placeholderText="@string/s_nhap_thong_tin_dinh_danh"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_no"
+                android:inputType="number"
+                android:maxLength="12"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_email_so_dien_thoai"
+            app:placeholderText="@string/s_name_email_com"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:inputType="textEmailAddress"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_mat_khau"
+            app:placeholderText="@string/s_toi_thieu_6_ky_tu"
+            app:endIconMode="password_toggle"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView style="@style/Rent.Label" android:text="@string/s_vai_tro_muc_tieu" />
+        <LinearLayout style="@style/Rent.Row" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <TextView android:id="@+id/pill_tenant" style="@style/Widget.Rent.Pill" android:text="@string/s_nguoi_thue_tenant" />
+        <TextView android:id="@+id/pill_landlord" style="@style/Widget.Rent.Pill" android:text="@string/s_chu_tro_landlord" />
+        </LinearLayout>
+        <TextView android:id="@+id/error" style="@style/Widget.Rent.Info.Red" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_register" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_dang_ky" />
+        <TextView android:id="@+id/link_login" style="@style/Rent.Link" android:text="@string/s_da_co_tai_khoan_dang_nhap" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

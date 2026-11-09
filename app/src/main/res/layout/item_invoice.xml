@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_6"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <TextView android:id="@+id/tv_title" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="15sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/primary" android:textSize="15sp" android:textStyle="bold" />
+    </LinearLayout>
+    <TextView android:id="@+id/tv_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+    <TextView android:id="@+id/tag_status" style="@style/Rent.Tag" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_paid" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_xac_nhan_da_nhan_tien" app:backgroundTint="@color/green" android:visibility="gone" />
+</LinearLayout>

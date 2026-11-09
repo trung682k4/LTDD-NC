@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_6"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/s_tong_quan" android:textColor="@color/black" android:textSize="15sp" android:textStyle="bold" />
+    <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_rented" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_phong_dang_cho_thue_tong" />
+    <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_revenue" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_doanh_thu_da_thu" />
+    <com.rentconnect.app.ui.KeyValueView android:id="@+id/kv_debt" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/s_cong_no_chua_thu" />
+</LinearLayout>

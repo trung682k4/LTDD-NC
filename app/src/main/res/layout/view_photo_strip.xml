@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/strip_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/space_8"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <FrameLayout
+            android:id="@+id/strip_add"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_thumb"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/s_them"
+                android:textColor="@color/muted" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/strip_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/muted"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_6"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <TextView android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="15sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tv_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+</LinearLayout>

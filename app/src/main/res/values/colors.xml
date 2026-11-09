@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3F5BD9</color>
+    <color name="soft">#E5EBFC</color>
+    <color name="green">#2E8B57</color>
+    <color name="red">#C0392B</color>
+    <color name="amber">#B9770E</color>
+    <color name="amber_bg">#FFF3D6</color>
+    <color name="red_bg">#FBE4E1</color>
+    <color name="green_bg">#E3F4EA</color>
+    <color name="muted">#777777</color>
+    <color name="field_bg">#EAEAEA</color>
+    <color name="border">#CCCCCC</color>
+    <color name="border_pill">#BBBBBB</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="thumb_bg">#EDEDED</color>
+    <color name="bubble_other">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#888888</color>
+</resources>

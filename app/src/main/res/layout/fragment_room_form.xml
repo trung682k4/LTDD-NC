@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_tieu_de_tin_dang"
+            app:placeholderText="@string/s_nhap_tieu_de"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:inputType="textCapSentences"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_tinh_thanh_pho">
+            <AutoCompleteTextView
+                android:id="@+id/province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout style="@style/Rent.Row" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Dropdown"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_quan_huyen">
+            <AutoCompleteTextView
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Dropdown"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_phuong_xa">
+            <AutoCompleteTextView
+                android:id="@+id/ward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_dia_chi_chi_tiet_so_nha_ngo_ngach"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:inputType="textCapSentences"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout style="@style/Rent.Row" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_dien_tich_m"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/area"
+                android:inputType="number"
+                android:maxLength="4"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_suc_chua_toi_da_nguoi"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/capacity"
+                android:inputType="number"
+                android:maxLength="2"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/Rent.Row" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_gia_thue_vnd_thang"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rent"
+                android:inputType="number"
+                android:maxLength="10"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_tien_coc_vnd"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deposit"
+                android:inputType="number"
+                android:maxLength="10"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout style="@style/Rent.Row" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle">
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_dien_vnd_kwh"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/elec"
+                android:inputType="number"
+                android:maxLength="6"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/s_nuoc_vnd_khoi"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/water"
+                android:inputType="number"
+                android:maxLength="6"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <TextView style="@style/Rent.Label" android:text="@string/s_phi_dich_vu_khac_internet_ve_sinh_rac" />
+        <LinearLayout android:id="@+id/fee_list" style="@style/Rent.Column" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_add_fee" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_them_khoan_phi" />
+        <TextView style="@style/Rent.Label" android:text="@string/s_tien_ich" />
+        <com.google.android.material.chip.ChipGroup android:id="@+id/amen_group" android:layout_width="match_parent" android:layout_height="wrap_content" app:chipSpacingHorizontal="8dp" app:chipSpacingVertical="8dp" />
+        <TextView style="@style/Rent.Label" android:text="@string/s_hinh_anh_video_dinh_kem" />
+        <com.rentconnect.app.ui.PhotoStrip android:id="@+id/photos" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+        <TextView android:id="@+id/error" style="@style/Widget.Rent.Info.Red" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_submit" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_gui_duyet" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

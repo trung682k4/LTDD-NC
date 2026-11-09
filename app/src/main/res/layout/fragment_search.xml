@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Rent.Field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/s_tu_khoa"
+            app:placeholderText="@string/s_tim_theo_tu_khoa"
+        >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/keyword"
+                android:inputType="text"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.chip.ChipGroup android:layout_width="match_parent" android:layout_height="wrap_content" app:chipSpacingHorizontal="8dp" app:chipSpacingVertical="8dp">
+            <TextView android:id="@+id/pill_area" style="@style/Widget.Rent.Pill" android:text="@string/s_khu_vuc" />
+            <TextView android:id="@+id/pill_price" style="@style/Widget.Rent.Pill" android:text="@string/s_khoang_gia" />
+            <TextView android:id="@+id/pill_area_range" style="@style/Widget.Rent.Pill" android:text="@string/s_dien_tich" />
+            <TextView android:id="@+id/pill_amen" style="@style/Widget.Rent.Pill" android:text="@string/s_tien_ich" />
+        </com.google.android.material.chip.ChipGroup>
+        <LinearLayout android:id="@+id/filter_card" style="@style/Rent.Column" android:background="@drawable/bg_card" android:padding="12dp" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Rent.Dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_khu_vuc">
+                <AutoCompleteTextView
+                    android:id="@+id/province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView style="@style/Rent.Label" android:text="@string/s_khoang_gia" />
+            <com.google.android.material.chip.ChipGroup android:id="@+id/price_group" android:layout_width="match_parent" android:layout_height="wrap_content" app:chipSpacingHorizontal="8dp" app:chipSpacingVertical="8dp" />
+            <TextView style="@style/Rent.Label" android:text="@string/s_dien_tich" />
+            <com.google.android.material.chip.ChipGroup android:id="@+id/area_group" android:layout_width="match_parent" android:layout_height="wrap_content" app:chipSpacingHorizontal="8dp" app:chipSpacingVertical="8dp" />
+            <TextView style="@style/Rent.Label" android:text="@string/s_tien_ich" />
+            <com.google.android.material.chip.ChipGroup android:id="@+id/amen_group" android:layout_width="match_parent" android:layout_height="wrap_content" app:chipSpacingHorizontal="8dp" app:chipSpacingVertical="8dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn_clear" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_xoa_bo_loc" />
+        </LinearLayout>
+        <TextView android:id="@+id/count" style="@style/Rent.Label" android:textStyle="normal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/results" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" />
+        <LinearLayout android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal" android:visibility="gone">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn_prev" style="@style/Widget.Rent.Button.Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="‹" android:textSize="22sp" />
+            <TextView android:id="@+id/page_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/muted" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/btn_next" style="@style/Widget.Rent.Button.Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="22sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

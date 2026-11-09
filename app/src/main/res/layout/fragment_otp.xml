@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        style="@style/Rent.Column"
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <Space android:layout_width="match_parent" android:layout_height="8dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="@string/s_nhap_ma_xac_thuc_otp_email_da_gui_toi_" android:textColor="@color/black" android:textSize="15sp" />
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:autofillHints="smsOTPCode"
+            android:background="@drawable/bg_otp"
+            android:gravity="center"
+            android:importantForAutofill="yes"
+            android:inputType="numberPassword"
+            android:letterSpacing="0.6"
+            android:maxLength="6"
+            android:textSize="24sp"
+            android:hint="••••••" />
+        <TextView android:id="@+id/error" style="@style/Widget.Rent.Info.Red" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_verify" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_xac_thuc" />
+        <TextView style="@style/Widget.Rent.Info.Amber" android:text="@string/s_sau_khi_xac_thuc_thanh_cong_he_thong_k" />
+        <TextView android:id="@+id/otp_demo" style="@style/Widget.Rent.Info" android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

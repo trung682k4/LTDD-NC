@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_card"
+    android:divider="@drawable/space_6"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:showDividers="middle">
+
+    <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/black" android:textSize="15sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tv_when" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+    <TextView android:id="@+id/tv_phone" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+    <TextView android:id="@+id/tv_note" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="14sp" />
+    <TextView android:id="@+id/tv_response" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/red" android:textSize="14sp" />
+    <TextView android:id="@+id/tag_status" style="@style/Rent.Tag" />
+    <LinearLayout android:id="@+id/row_actions" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:divider="@drawable/space_8" android:showDividers="middle" android:visibility="gone">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_confirm" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_xac_nhan" app:backgroundTint="@color/green" android:layout_width="0dp" android:layout_weight="1" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_reject" style="@style/Widget.Rent.Button.Primary" android:text="@string/s_tu_choi" app:backgroundTint="@color/red" android:layout_width="0dp" android:layout_weight="1" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_counter" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_tu_choi_kem_de_xuat_lich_khac" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_complete" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_danh_dau_hoan_tat" android:visibility="gone" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/btn_cancel" style="@style/Widget.Rent.Button.Outline" android:text="@string/s_huy_lich" android:textColor="@color/red" app:strokeColor="@color/red" android:visibility="gone" />
+</LinearLayout>
